@@ -1,3 +1,4 @@
+/* General settings */
 * {
     margin: 0;
     padding: 0;
@@ -14,3 +15,56 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/* /General settings */
+
+
+
+/* Stilizzazione TITOLO */
+h1 {
+    margin: 30px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 55px;
+}
+/* /Stilizzazione TITOLO */
+
+
+
+/* Ciò che riguarda i numeri in generale */
+#allNumber {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* ____________________________________________ */
+.elementWidth {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 7 - 20px);
+    margin: 10px;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 2px 3px 2px black;
+    font-weight: bold;
+}
+/* /Ciò che riguarda i numeri in generale */
+
+
+
+/* Stilizzazione numeri */
+.normal {
+    background-color: #1389b2;
+}
+/* ____________________________________________ */
+.threeMultiplier {
+    background-color: #0cd6a1;
+}
+/* ____________________________________________ */
+.fiveMultiplier {
+    background-color: #ffd166;
+}
+/* ____________________________________________ */
+.bothMultiplier {
+    background-color: #f0466f;
+}
+/* /Stilizzazione numeri */

@@ -21,7 +21,7 @@ e per i multipli di 5 stampi “Buzz”. Per i numeri che sono sia multipli di 3
 
 
 
-// Cominciamo con lo stampare i numeri da 1 a 100 in Console
+// Creo la variabile che permetterà di creare div numerati da 1 a 100 in automatico
 
 let allNumberEl = document.getElementById("allNumber");
 
@@ -38,23 +38,39 @@ for(let i = 0; i < 100; i++) {
     newDivElement.innerHTML = (i + 1);
 
     // stampo in console i numeri da 1 a 100
-    console.log(i+1)
+    // console.log(i+1)
 
 
     // restituisco in pagina i seguenti valori con i numeri, in base anche ai loro multipli
     if((i + 1) % 3 == 0 && (i + 1) % 5 == 0) {
 
         newDivElement.innerHTML = "FizzBuzz";
+        console.log(newDivElement.innerHTML);
+        newDivElement.classList.add("elementWidth");
+        newDivElement.classList.add("bothMultiplier");
 
     } else if((i + 1) % 3 == 0)  {
 
         newDivElement.innerHTML = "Fizz";
+        console.log(newDivElement.innerHTML);
+        newDivElement.classList.add("elementWidth");
+        newDivElement.classList.add("threeMultiplier");
 
     } else if((i + 1) % 5 == 0) {
 
         newDivElement.innerHTML = "Buzz";
+        console.log(newDivElement.innerHTML);
+        newDivElement.classList.add("elementWidth");
+        newDivElement.classList.add("fiveMultiplier");
 
+    } else {
+
+        newDivElement.innerHTML = i + 1;
+        console.log(newDivElement.innerHTML);
+        newDivElement.classList.add("elementWidth");
+        newDivElement.classList.add("normal");
     }
     
+
 
 }
