@@ -9,3 +9,11 @@ e per i multipli di 5 stampi “Buzz”. Per i numeri che sono sia multipli di 3
 - per i multipli di 5 non bisognerà stampare il numero ma "Buzz" al posto di quest'ultimo
 - per i multipli sia di 3 che di 5 non bisognerà stampare il numero ma "FizzBuzz" al posto di quest'ultimo
 */
+
+
+// Cominciamo con lo stampare i numeri da 1 a 100 in Console
+
+for(let i = 0; i < 100; i++) {
+
+    console.log(i + 1);
+}
